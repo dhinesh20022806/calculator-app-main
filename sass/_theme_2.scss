@@ -1,0 +1,56 @@
+.active_theme_2 {
+  background-color: $theme_2_key_background_toggle !important;
+  transition: all 0.5s ease-in;
+}
+// add this class to body
+._theme_2_bg{
+     background-color: $theme_2_main_background_light;
+     color: $theme_2_text_darkYellow;
+}
+// add this class to top class
+._theme_2_top{
+  color: $theme_2_text_darkYellow;
+}
+
+// add this class to tri-state-toggle class
+._theme_2_tri_btn{
+    background-color: $theme_2_toggle_key_background;
+
+}
+// add this class to display output class
+._theme_2_display_output{
+    color: $theme_2_text_darkYellow;
+  background-color: $theme_2_screen_background_light;
+
+}
+
+// add this class to buttons class
+._theme_2_buttons{
+  background-color: $theme_2_toggle_key_background;
+
+}
+
+// add this class to key-buttons class
+
+._theme_2_key-buttons{
+    border: none;
+    border-bottom: 4px solid $theme_2_key_shadow_orange !important;
+    color: $theme_2_text_darkYellow ;
+    background-color: $theme_2_key_background_light ;
+}
+
+// add this class to key-del and key-reset classes
+
+._theme_2_key_for_del_reset{
+    border-bottom: 4px solid $theme_2_key_background_cyan !important;
+    color: $theme_2_text_white !important;
+    background-color: $theme_2_key_shadow_darkCyan !important;
+
+}
+
+// add this class to key-equal class
+._theme_2_equal{
+    border-bottom: 4px solid $theme_2_key_shadow_darkOrange !important;
+    color: $theme_2_text_white;
+    background-color: $theme_2_key_background_toggle;
+}

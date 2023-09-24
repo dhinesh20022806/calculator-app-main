@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Frontend Mentor | Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+  </head>
+  <body class="">
+    <div class="container flex flex-col gap-20">
+      <!-- top section  -->
+      <header class="top flex align-item-center justify-content_space-between">
+        <!-- title calc -->
+        <div class="title">calc</div>
+        <div class="theme gap-20 flex justify-content_space-between align-item-center ">
+          <div class="theme-title">theme</div>
+          <div class="theme-btn flex flex-col">
+            <div class="modes flex justify-content_space-between">
+              <div class="mode-1">1</div>
+              <div class="mode-2">2</div>
+              <div class="mode-3">3</div>
+            </div>
+            <!-- tri state buttons -->
+
+            <div class="tri-state-toggle">
+              <button
+                class="tri-state-toggle-button "
+                id="tri-state-button1"
+              ></button
+              ><button
+                class="tri-state-toggle-button"
+                id="tri-state-button2"
+              ></button
+              ><button
+                class="tri-state-toggle-button"
+                id="tri-state-button3"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- display the outputs -->
+      <section class="display-output flex align-item-center">4641234256354235333000</section>
+      <section class="buttons">
+        <button class="key-buttons key-1">1</button
+        ><button class="key-buttons key-2">2</button
+        ><button class="key-buttons key-3">3</button
+        ><button class="key-buttons key-4">4</button
+        ><button class="key-buttons key-5">5</button
+        ><button class="key-buttons key-6">6</button
+        ><button class="key-buttons key-7">7</button
+        ><button class="key-buttons key-8">8</button
+        ><button class="key-buttons key-9">9</button
+        ><button class="key-buttons key-0">0</button
+        ><button class="key-buttons key--">-</button
+        ><button class="key-buttons key-plus">+</button
+          ><button class="key-buttons key-/">/</button
+        ><button class="key-buttons key-x">x</button
+        ><button class="key-buttons key-equal">=</button
+        ><button class="key-buttons key-del">Del</button
+        ><button class="key-buttons key-reset">Reset</button
+        ><button class="key-buttons key-dot">.</button>
+      </section>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="./js/theme.js"></script>
+  </body>
+</html>

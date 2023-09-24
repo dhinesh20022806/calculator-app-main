@@ -1,0 +1,89 @@
+// themeOne variables
+
+// background colors
+$theme_1_main_background_blue: hsl(222, 26%, 31%);
+$theme_1_toggle_background_blue: hsl(223, 31%, 20%);
+$theme_1_screen_background_blue: hsl(224, 36%, 15%);
+
+// keys colors
+
+$theme_1_key_background_blue: hsl(225, 21%, 49%);
+$theme_1_key_shadow_blue: hsl(224, 28%, 35%);
+
+$theme_1_key_toggle_red: hsl(6, 63%, 50%);
+$theme_1_key_shadow_red: hsl(6, 70%, 34%);
+
+$theme_1_key_background_light: hsl(30, 25%, 89%);
+$theme_1_key_shadow_Grayish_orange: hsl(28, 26%, 65%);
+
+// text colors
+
+$theme_1_text_darkBlue: hsl(221, 14%, 31%);
+$theme_1_text_white: hsl(0, 0%, 100%);
+
+// themeTwo variables
+
+// background colors
+$theme_2_main_background_light: hsl(0, 0%, 90%);
+$theme_2_toggle_key_background: hsl(0, 5%, 81%);
+$theme_2_screen_background_light: hsl(0, 0%, 93%);
+
+// keys for del and reset
+$theme_2_key_background_cyan: hsl(185, 42%, 37%);
+$theme_2_key_shadow_darkCyan: hsl(185, 58%, 25%);
+
+// key for equal
+$theme_2_key_background_toggle: hsl(25, 98%, 40%);
+$theme_2_key_shadow_darkOrange: hsl(25, 99%, 27%);
+
+// this for rest of the keys
+$theme_2_key_background_light: hsl(45, 7%, 89%);
+$theme_2_key_shadow_orange: hsl(35, 11%, 61%);
+
+// text colors
+
+$theme_2_text_darkYellow: hsl(60, 10%, 19%);
+$theme_2_text_white: hsl(0, 0%, 100%);
+
+// themeThree variables
+
+$theme_3_main_background_violet: hsl(268, 75%, 9%);
+$theme_3_toggle_keypad_screen_background_darkViolet: hsl(268, 71%, 12%);
+
+// keys
+$theme_3_key_background_del: hsl(281, 89%, 26%);
+$theme_3_key_shadow_del: hsl(285, 91%, 52%);
+$theme_3_key_toggle_background_equal: hsl(176, 100%, 44%);
+$theme_3_key_shadow_equal: hsl(177, 92%, 70%);
+$theme_3_key_background_normal: hsl(290, 70%, 36%);
+$theme_3_key_shadow_normal: hsl(290, 70%, 36%);
+
+// text colors
+
+$theme_3_text_yellow: hsl(52, 100%, 62%);
+$theme_3_text_darkBlue: hsl(198, 20%, 13%);
+$theme_3_text_white: hsl(0, 0%, 100%);
+
+// font family : League Spartan weight:700
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+// heights
+
+$body_height: 100vh;
+$container_height: auto;
+
+// output height
+
+$output_height: 100px;
+
+// width
+$body_width: 100vw;
+$container_width: 440px;
+
+// output width
+
+$output_width: 440px;
+
+// gap
+
+$gap-20: 20px;

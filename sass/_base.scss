@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  height: $body_height;
+  width: $body_width;
+  display: grid;
+  place-items: center;
+ 
+}
+.container {
+  width: $container_width;
+  height: $container_height;
+}
+.flex {
+  display: flex;
+}
+.justify-content_space-between {
+  justify-content: space-between;
+}
+.flex-col {
+  flex-direction: column;
+}
+.align-item-center {
+  align-items: center;
+}
+.align-item_space-between {
+  align-items: space-between;
+}
+
+.gap-20 {
+  gap: $gap-20;
+}
+
+// top
+.top {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 2rem;
+
+  .theme {
+    .theme-title {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+    }
+    .theme-btn {
+    }
+    .tri-state-toggle {
+      height: 26px;
+      align-items: center;
+      display: inline-flex;
+      justify-content: space-between;
+      width: 100px;
+      padding: 5px;
+      border-radius: 13px;
+      transition: all 500ms ease;
+      button {
+        display: flex;
+        align-items: center;
+        width: 20px;
+        border: 0px solid transparent;
+        background-color: transparent;
+        height: 20px;
+        border-radius: 12px;
+        cursor: pointer;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
+
+
+// display the output
+
+.display-output {
+    overflow: hidden;
+    font-size: 3rem;
+    justify-content: end;
+    padding: 15px;
+  border-radius: 10px;
+  width: $output_width;
+  height: $output_height;
+}
+// end of the display section
+
+// buttons sections
+
+.buttons {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 85px 85px 85px 85px;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  gap: $gap-20;
+  border-radius: 10px;
+
+  .key-buttons {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  // 7,8,9 and del keys are here 1st row!
+
+  .key-7,
+  .key-8,
+  .key-9,
+  .key-del {
+    grid-row: 1/2;
+  }
+ 
+
+
+
+  //  + sign
+  .key-plus {
+    grid-row: 2/3;
+    grid-column: 4/5;
+  }
+
+  // 1,2,3,- are here! 3rd row
+
+  .key-1,
+  .key-2,
+  .key-3,
+  .key-- {
+    // grid-area: 5/ 6 / 1 / 2;
+    grid-row: 3/4;
+    // grid-column: 1/2;
+  }
+  // dot 4th row
+  .key-dot {
+    grid-row: 4;
+  }
+
+  // last row
+  .key-reset {
+    grid-column: 1/3;
+  }
+  .key-equal {
+    grid-row: 5;
+    grid-column: 3/5;
+  }
+}
