@@ -2,6 +2,12 @@
 .active_theme_1 {
   background-color: $theme_1_key_toggle_red !important;
   transition: all 0.5s ease-in;
+  &:hover{
+    background-color: $theme_1_hover_red !important;
+  }
+}
+body{
+    transition: all 0.5s ease-in;
 }
 // add this class to body
 ._theme_1_bg{
@@ -38,6 +44,9 @@
     border-bottom: 4px solid $theme_1_key_shadow_Grayish_orange !important;
     color: $theme_1_text_darkBlue ;
     background-color: $theme_1_key_background_light ;
+    &:hover{
+        background-color:$theme_1_hover_white;
+    }
 }
 
 // add this class to key-del and key-reset classes
@@ -46,6 +55,9 @@
     border-bottom: 4px solid $theme_1_key_shadow_blue !important;
     color: $theme_1_text_white !important;
     background-color: $theme_1_key_background_blue !important;
+    &:hover{
+        background-color: $theme_1_hover_blue !important;
+    }
 
 }
 
@@ -54,4 +66,7 @@
     border-bottom: 4px solid $theme_1_key_shadow_red !important;
     color: $theme_1_text_white;
     background-color: $theme_1_key_toggle_red;
+    &:hover{
+        background-color: $theme_1_hover_red;
+    }
 }

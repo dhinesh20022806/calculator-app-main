@@ -10,7 +10,10 @@ body {
   width: $body_width;
   display: grid;
   place-items: center;
- 
+}
+input{
+  border: none;
+  text-align: right;
 }
 .container {
   width: $container_width;
@@ -77,14 +80,13 @@ body {
   }
 }
 
-
 // display the output
 
 .display-output {
-    overflow: hidden;
-    font-size: 3rem;
-    justify-content: end;
-    padding: 15px;
+  overflow: hidden;
+  font-size: 3rem;
+  justify-content: end;
+  padding: 15px;
   border-radius: 10px;
   width: $output_width;
   height: $output_height;
@@ -118,9 +120,6 @@ body {
   .key-del {
     grid-row: 1/2;
   }
- 
-
-
 
   //  + sign
   .key-plus {
@@ -150,5 +149,37 @@ body {
   .key-equal {
     grid-row: 5;
     grid-column: 3/5;
+  }
+}
+
+// width 440px
+
+@media (max-width:500px) {
+  .container {
+    width: $container_width - 90;
+  }
+  .display-output {
+    width: $output_width - 90;
+  }
+  .buttons {
+    grid-template-columns: 70px 70px 70px 70px;
+    grid-template-rows: 70px 70px 70px 70px 70px;
+    gap: 15px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 345px) {
+  .container {
+    width: $container_width - 150;
+  }
+  .display-output {
+    width: $output_width - 150;
+  }
+  .buttons {
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    gap: 15px;
+    padding: 20px;
   }
 }

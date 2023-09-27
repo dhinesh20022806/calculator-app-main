@@ -12,10 +12,6 @@ body {
   display: grid;
   place-items: center; }
 
-input {
-  border: none;
-  text-align: right; }
-
 .container {
   width: 440px;
   height: auto; }
@@ -275,4 +271,4 @@ body {
   ._theme_3_equal:hover {
     background-color: #90eee8; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stye.css.map */
