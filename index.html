@@ -35,26 +35,27 @@
         <div class="theme gap-20 flex justify-content_space-between align-item-center ">
           <div class="theme-title">theme</div>
           <div class="theme-btn flex flex-col">
-            <div class="modes flex justify-content_space-between">
+            <div class="modes flex justify-content_space-around">
               <div class="mode-1">1</div>
               <div class="mode-2">2</div>
               <div class="mode-3">3</div>
             </div>
             <!-- tri state buttons -->
 
-            <div class="tri-state-toggle">
-              <button
-                class="tri-state-toggle-button "
+            <div  class="tri-state-toggle ">
+              <!-- <button 
+                class="tri-state-toggle-button " draggable="true"
                 id="tri-state-button1"
               ></button
-              ><button
-                class="tri-state-toggle-button"
+              ><button 
+                class="tri-state-toggle-button" draggable="true"
                 id="tri-state-button2"
               ></button
-              ><button
-                class="tri-state-toggle-button"
+              ><button 
+                class="tri-state-toggle-button" draggable="true"
                 id="tri-state-button3"
-              ></button>
+              ></button> -->
+              <input class="range-btn " type="range" min="1" max="3" value="1" step="1" list="options" name="themes" id="theme-switch">
             </div>
           </div>
         </div>

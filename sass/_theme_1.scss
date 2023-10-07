@@ -1,16 +1,33 @@
 // add this class to tri-state-toggle 1st btn
-.active_theme_1 {
+
+input[type=range].active_theme_1::-moz-range-thumb{
   background-color: $theme_1_key_toggle_red !important;
-  transition: all 0.5s ease-in;
-  &:hover{
+  border: none !important;
+     &:hover{
+        background-color: $theme_1_hover_red !important;
+     }
+ }
+
+input[type=range].active_theme_1::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: $theme_1_key_toggle_red !important;
+    
+    //   background: $theme_3_key_shadow_equal !important;
+    
+    &:hover{
     background-color: $theme_1_hover_red !important;
+    }
   }
-}
-body{
-    transition: all 0.5s ease-in;
-}
+
+    
+
 // add this class to body
 ._theme_1_bg{
+ 
      background-color: $theme_1_main_background_blue;
      color: $theme_1_text_white;
 }
@@ -20,8 +37,17 @@ body{
 }
 
 // add this class to tri-state-toggle class
+input[type=range]._theme_1_range {
+  
+  transition: none !important;
+      background: $theme_1_toggle_background_blue;
+      
+    }
+
 ._theme_1_tri_btn{
-      background-color: $theme_1_toggle_background_blue;
+  transition: none !important;
+
+  background-color: $theme_1_toggle_background_blue !important;
 
 }
 // add this class to display output class

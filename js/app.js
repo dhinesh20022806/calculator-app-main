@@ -10,6 +10,7 @@ const calculator = {
 const updateDisplay = () => {
   const display = document.querySelector(".display-output");
   display.value = calculator.displayValue;
+  console.log(display.value);
 };
 updateDisplay();
 
@@ -43,7 +44,7 @@ keys.addEventListener("click", (event) => {
       break;
 
     default:
-      if (Number.isInteger(parseFloat(value))) inputDigits(value);
+       inputDigits(value);
       break;
   }
   updateDisplay();
@@ -55,9 +56,12 @@ const inputDigits = function (digit) {
     calculator.displayValue = digit;
     calculator.waitingForSecondOperand = false;
   } else {
+    console.log(displayValue);
     calculator.displayValue =
-      displayValue === "0" ? digit : displayValue + digit;
+    displayValue === "0" ? digit : displayValue + digit;
+    console.log(displayValue);
   }
+  updateDisplay();
 };
 // dot function
 function inputDecimal(dot) {
@@ -71,7 +75,7 @@ function inputDecimal(dot) {
   }
 }
 
-// frist inputOperator
+// first inputOperator
 
 function handleOperator(nextOperator) {
   const { firstOperand, displayValue, operator } = calculator;
@@ -84,6 +88,7 @@ function handleOperator(nextOperator) {
 
   if (firstOperand === null && !isNaN(inputValue)) {
     calculator.firstOperand = inputValue;
+    console.log(calculator.firstOperand);
   } else if (operator) {
     const result = calc(firstOperand, inputValue, operator);
     calculator.displayValue = `${parseFloat(result.toFixed(7))}`;
@@ -116,12 +121,33 @@ function clear() {
 }
 
 function del() {
-  const numToStr = calculator.displayValue.toString();
-  calculator.displayValue = numToStr.slice(0, -1);
+  console.log(calculator.operator, !!calculator.operator);
+  if(calculator.operator && calculator.waitingForSecondOperand === true){
+    console.log('working');
+    calculator.firstOperand = null;
+  calculator.operator  = null;
+    calculator.waitingForSecondOperand = false;
+    calculator.displayValue = calculator.displayValue.slice(0, -1);
+    updateDisplay();
+    // calculator.firstOperand += calculator.displayValue;
+  //   calculator.waitingForSecondOperand = false;
+
+  }
+  // else if(calculator.secondOperand){
+  //   calculator.displayValue = numToStr.slice(0, -1);
+  //   calculator.secondOperand = calculator.displayValue
+    
+  // }
+  else{
+    
+    calculator.displayValue = calculator.displayValue.slice(0, -1);
+    updateDisplay();
+  }
+
+  
+
   // let dis = numToStr.slice(0,-1)
-  calculator.firstOperand = null;
-  calculator.operator = null;
-  calculator.secondOperand = null;
+  // calculator.secondOperand = null;
   //  calculator.waitingForSecondOperand = false;
   // if (calculator.waitingForSecondOperand === true) {
   //   console.log("2nd is true");
@@ -140,3 +166,6 @@ function del() {
 
   // }
 }
+
+
+
