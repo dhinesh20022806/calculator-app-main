@@ -1,3 +1,4 @@
 {
-  "workbench.colorTheme": "Andromeda Colorizer"
+  "workbench.colorTheme": "Andromeda Colorizer",
+  "liveServer.settings.port": 5501
 }
