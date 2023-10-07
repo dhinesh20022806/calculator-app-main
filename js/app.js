@@ -10,6 +10,7 @@ const calculator = {
 const updateDisplay = () => {
   const display = document.querySelector(".display-output");
   display.value = calculator.displayValue;
+
 };
 updateDisplay();
 
@@ -119,7 +120,9 @@ function clear() {
 function del() {
   if(calculator.operator && calculator.waitingForSecondOperand === true){
    
-  clear();
+  calculator.firstOperand = null;
+  calculator.operator = null;
+  calculator.waitingForSecondOperand = false;
     calculator.displayValue = calculator.displayValue.slice(0, -1);
     updateDisplay();
     // calculator.firstOperand += calculator.displayValue;

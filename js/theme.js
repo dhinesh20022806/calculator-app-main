@@ -171,6 +171,7 @@ function  changeTheme(){
   
   switch (rangebtn.value) {
   case "1":
+    console.log('1');
       themeChange(
         "active_theme_1",
         "_theme_1_bg",
@@ -206,6 +207,7 @@ function  changeTheme(){
       );
     break;
     case "2":
+      console.log(2);
        themeChange(
          "active_theme_2",
          "_theme_2_bg",
@@ -241,6 +243,7 @@ function  changeTheme(){
       );
       break;
       case "3":
+        console.log(3);
          themeChange(
            "active_theme_3",
            "_theme_3_bg",
