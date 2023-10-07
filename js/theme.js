@@ -16,6 +16,7 @@ const resetKey = document.querySelector(".key-reset");
 const equalKey = document.querySelector(".key-equal");
 
 rangebtn.addEventListener("click", changeTheme);
+rangebtn.addEventListener('touchmove',changeTheme);
 
 
 // const switch_themes = document.querySelector('.tri-state-toggle-button')
